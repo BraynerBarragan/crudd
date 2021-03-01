@@ -1,0 +1,9 @@
+productos | CREATE TABLE `productos` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(255) NOT NULL,
+  `descripcion` varchar(255) DEFAULT NULL,
+  `precio_compra` float(14,2) DEFAULT NULL,
+  `precio_venta` float(14,2) DEFAULT NULL,
+  `estado` tinyint(1) DEFAULT NULL COMMENT '1 = activo, 0 = inactivo',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8 
