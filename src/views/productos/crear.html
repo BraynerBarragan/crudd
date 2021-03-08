@@ -8,24 +8,25 @@
     <h1>Crear producto</h1>
     <a href="{{url_for('productos')}}">Volver</a>
     <form action="{{ url_for('crear_producto') }}" method="POST">
-        <div class="form-group">
+        <div class="mb-3">
             <label for="nombre">Nombre</label>
             <input type="text" class="form-control" id="nombre" name="nombre">
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <label for="descripcion">Descripcion</label>
-            <input type="text" class="form-control" id="descripcion" name="descripcion">
+            <textarea type="text" class="form-control" id="descripcion" name="descripcion"></textarea>
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <label for="precioCompra">Precio de compra</label>
-            <input type="text" class="form-control" id="precioCompra" name="precioCompra">
+            <input type="number" class="form-control" id="precioCompra" name="precioCompra">
         </div>
-        <div class="form-group">
+        <div class="mb-3">
             <label for="precioVenta">Precio de venta</label>
-            <input type="text" class="form-control" id="precioVenta" name="precioVenta">
+            <input type="number" class="form-control" id="precioVenta" name="precioVenta">
         </div>
+       
         
-        <div class="form-group">
+        <div class="mb-3">
             <label for="estado">Estado</label>
             <select class="form-select" id="estado" name="estado">
                 <option selected>Seleccione</option>
@@ -36,5 +37,6 @@
         </div>
         <button type="submit">Guardar</button>
     </form>
+
 
 {% endblock %}
