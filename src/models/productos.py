@@ -1,4 +1,4 @@
-from src.config.db import DB
+from src.config.globals import DB
 class ProductosModel():
     def traerTodos(self):
         cursor = DB.cursor()
